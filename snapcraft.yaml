@@ -7,7 +7,7 @@ confinement: strict
 apps:
     robomongo:
         command: bin/robomongo.sh
-        plugs: [network, unity7]
+        plugs: [network, unity7, x11]
 
 parts:
     tarball:
