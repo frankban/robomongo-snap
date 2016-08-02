@@ -1,4 +1,6 @@
 *.snap
-parts/
+__pycache__
+parts/*
+!parts/plugins/
 prime/
 stage/
