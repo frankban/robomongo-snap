@@ -7,14 +7,14 @@ confinement: strict
 apps:
     robomongo:
         command: bin/robomongo.sh
-        plugs: [network, unity7, x11]
+        plugs: [network, unity7]
 
 parts:
     tarball:
         plugin: dump
         source: https://download.robomongo.org/0.9.0-rc9/linux/robomongo-0.9.0-rc9-linux-x86_64-0bb5668.tar.gz
+        after: [desktop/qt5]
     wrapper:
         plugin: copy
         files:
             robomongo.sh: bin/robomongo.sh
-        after: [desktop/qt5]
