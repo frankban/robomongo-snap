@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Robomongo
+Comment=Rocket.Chat Native Cross-Platform Desktop Application via Electron.
+Exec=robomongo
+Terminal=false
+Type=Application
+Icon=${SNAP}/meta/gui/icon.png
+Categories=GNOME;GTK;Network;Utilities
+StartupWMClass=Robomongo
+

@@ -1,20 +1,16 @@
 name: robomongo
-version: 0.9.0-rc9
-summary: MongoDB management tool
+version: 1.0.0
+summary: Robomongo
 description: Native and cross-platform MongoDB manager
 confinement: strict
 
 apps:
     robomongo:
-        command: bin/robomongo.sh
-        plugs: [network, unity7]
+        command: env LC_ALL=C QT_XKB_CONFIG_ROOT="$SNAP/usr/share/X11/xkb" desktop-launch robomongo
+        plugs: [network, unity7, home]
 
 parts:
     tarball:
         plugin: dump
-        source: https://download.robomongo.org/0.9.0-rc9/linux/robomongo-0.9.0-rc9-linux-x86_64-0bb5668.tar.gz
+        source: https://download.robomongo.org/1.0.0/linux/robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz
         after: [desktop/qt5]
-    wrapper:
-        plugin: copy
-        files:
-            robomongo.sh: bin/robomongo.sh
