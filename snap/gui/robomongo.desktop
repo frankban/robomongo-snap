@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Robomongo
-Comment=Rocket.Chat Native Cross-Platform Desktop Application via Electron.
+Comment=Native and cross-platform MongoDB manager
 Exec=robomongo
 Terminal=false
 Type=Application

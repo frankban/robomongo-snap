@@ -7,7 +7,7 @@ confinement: strict
 apps:
     robomongo:
         command: env LC_ALL=C QT_XKB_CONFIG_ROOT="$SNAP/usr/share/X11/xkb" desktop-launch robomongo
-        plugs: [network, unity7, home]
+        plugs: [home, network, unity7]
 
 parts:
     tarball:
