@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Robomongo
+Comment=Native and cross-platform MongoDB manager
+Exec=robomongo
+Terminal=false
+Type=Application
+Icon=${SNAP}/meta/gui/icon.png
+Categories=GNOME;GTK;Network;Utility
+StartupWMClass=robomongo
+
