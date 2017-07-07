@@ -7,10 +7,10 @@ confinement: strict
 apps:
     robomongo:
         command: env LC_ALL=C QT_XKB_CONFIG_ROOT="$SNAP/usr/share/X11/xkb" desktop-launch robomongo
-        plugs: [home, network, unity7]
+        plugs: [home, network, network-bind, unity7]
 
 parts:
     tarball:
         plugin: dump
         source: https://download.robomongo.org/1.0.0/linux/robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz
-        after: [desktop/qt5]
+        after: [desktop-qt5]
