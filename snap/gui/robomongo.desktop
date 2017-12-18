@@ -1,10 +1,9 @@
 [Desktop Entry]
-Name=Robomongo
+Name=Robo 3T
 Comment=Native and cross-platform MongoDB manager
-Exec=robomongo
+Exec=robo3t
 Terminal=false
 Type=Application
 Icon=${SNAP}/meta/gui/icon.png
 Categories=GNOME;GTK;Network;Utility
-StartupWMClass=robomongo
-
+StartupWMClass=robo3t
