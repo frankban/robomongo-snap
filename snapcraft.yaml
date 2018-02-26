@@ -1,5 +1,5 @@
 name: robo3t
-version: 1.0.1
+version: 1.2.1
 summary: Robo 3T
 description: Native and cross-platform MongoDB manager
 confinement: strict
@@ -13,7 +13,7 @@ apps:
 parts:
     tarball:
         plugin: dump
-        source: https://download.robomongo.org/1.1.1/linux/robo3t-1.1.1-linux-x86_64-c93c6b0.tar.gz
+        source: https://download.robomongo.org/1.2.1/linux/robo3t-1.2.1-linux-x86_64-3e50a65.tar.gz
         after: [desktop-qt5]
         install: |
             rm $SNAPCRAFT_PART_INSTALL/lib/libstdc++*
