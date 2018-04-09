@@ -1,4 +1,5 @@
 *.snap
+*.tar.bz2
 __pycache__
 parts/*
 !parts/plugins/
